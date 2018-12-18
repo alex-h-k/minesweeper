@@ -67,7 +67,7 @@ function startGame () {
 function checkForWin () {
   for (var i = 0; i < board.cells.length; i++){
     var check = board.cells[i];
-    if(!check.isMine && check.hidden){
+    if(!check.isMine && check.hidden) {
       return false;
     } else if (check.isMine && !check.isMarked) {
       return false;
